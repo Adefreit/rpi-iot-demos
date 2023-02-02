@@ -27,8 +27,8 @@ def loop():
 # --------------------------------------------
 if __name__ == '__main__':
 	try:
-		comm.connect()
 		setup()
+		print("Program Running.  Waiting for a Sound")
 		loop()
 	except KeyboardInterrupt: 
 		pass	

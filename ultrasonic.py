@@ -56,7 +56,6 @@ def destroy():
 if __name__ == "__main__":
 	setup()
 	try:
-		comm.connect()
 		print("Ultrasonic starts now!")
 		loop()
 	except KeyboardInterrupt:

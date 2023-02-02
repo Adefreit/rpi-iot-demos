@@ -12,6 +12,9 @@ import time					# Library needed for timekeeping
 # This is the pin we are going to use to control the buzzer
 Buzzer = 11    
 
+# This is a flag variable used to control whether to run the buzzer
+active = True
+
 
 def setup(pin):
 	global BuzzerPin
@@ -48,7 +51,8 @@ def destroy():
 # --------------------------------------------
 # Main Program Starts Here
 # --------------------------------------------
-if __name__ == '__main__':     
+if __name__ == '__main__': 
+	    
 	setup(Buzzer)
 	try:
 		print("Buzzer Running")
